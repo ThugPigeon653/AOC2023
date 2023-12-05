@@ -1,7 +1,9 @@
+import os
 
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
 total:int=0
 
-with open("C:\\users\\lneil\\documents\\programming\\aoc2023\\input.txt", "r") as file:
+with open("input.txt", "r") as file:
     _text=file.read()
 text=_text.split('\n')
 for line in text:
